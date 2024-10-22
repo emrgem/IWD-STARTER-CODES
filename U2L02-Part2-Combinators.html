@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .example {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .code-block {
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .highlight {
+            background: yellow;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators Lesson</h1>
+    
+    <div class="example">
+        <h2>1. Descendant Selector (space)</h2>
+        <div class="code-block">.descendant-demo p {
+    color: blue;
+}</div>
+        <p>Selects ALL paragraphs inside the element with class "descendant-demo", no matter how deeply nested.</p>
+        
+        <div class="descendant-demo">
+            <p>This paragraph is blue (direct child)</p>
+            <div>
+                <p>This paragraph is also blue (nested descendant)</p>
+            </div>
+            <span>
+                <div>
+                    <p>This deep paragraph is still blue!</p>
+                </div>
+            </span>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>2. Child Selector (>)</h2>
+        <div class="code-block">.child-demo > p {
+    color: green;
+}</div>
+        <p>Selects ONLY direct child paragraphs of the element with class "child-demo".</p>
+        
+        <div class="child-demo">
+            <p>This paragraph is green (direct child)</p>
+            <div>
+                <p>This paragraph stays black (not a direct child)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>3. Adjacent Sibling Selector (+)</h2>
+        <div class="code-block">.adjacent-demo h3 + p {
+    color: red;
+    font-weight: bold;
+}</div>
+        <p>Selects paragraph that comes IMMEDIATELY after h3.</p>
+        
+        <div class="adjacent-demo">
+            <h3>Title</h3>
+            <p>This paragraph is red and bold (right after h3)</p>
+            <p>This paragraph stays normal (not immediately after h3)</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>4. General Sibling Selector (~)</h2>
+        <div class="code-block">.sibling-demo h3 ~ p {
+    color: purple;
+    font-style: italic;
+}</div>
+        <p>Selects ALL paragraphs that come after h3.</p>
+        
+        <div class="sibling-demo">
+            <p>This paragraph stays normal (before h3)</p>
+            <h3>Title</h3>
+            <p>This paragraph is purple and italic</p>
+            <div>Some div in between</div>
+            <p>This paragraph is also purple and italic</p>
+        </div>
+    </div>
+</body>
+</html>
