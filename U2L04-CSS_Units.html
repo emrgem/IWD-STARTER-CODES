@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Base styles and CSS variables */
+    :root {
+      --header-height: 10vh;
+      --hero-height: 90vh;
+      --container-width: 80%;
+      --content-width: 40em;
+      --base-spacing: 1rem;
+    }
+
+    /* Basic reset and typography */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Provided layout styles */
+    header {
+      background: #4263eb;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      /* Exercise 1: Add header height using --header-height variable */
+    }
+
+    .logo {
+      /* Exercise 2: Convert the font-size to rem */
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* Exercise 3: Add hero height using --hero-height variable */
+      /* Exercise 4: Add padding using vw */
+    }
+
+    .hero-content {
+      /* Exercise 5: Add max-width using --container-width variable */
+    }
+
+    .hero h1 {
+      /* Exercise 6: Convert font-size to em */
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      /* Exercise 7: Convert font-size and max-width to em */
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      background: #4263eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      /* Exercise 8: Convert padding and font-size to em */
+      padding: 16px 32px;
+      font-size: 18px;
+    }
+
+    .features {
+      background: white;
+      /* Exercise 9: Add padding using --base-spacing variable */
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Exercise 10: Add gap using --base-spacing */
+      /* Exercise 11: Add max-width using --container-width */
+      margin: 0 auto;
+    }
+
+    .feature {
+      text-align: center;
+      /* Exercise 12: Add padding using --base-spacing */
+    }
+
+    .feature-icon {
+      /* Exercise 13: Convert font-size to rem */
+      font-size: 32px;
+      color: #4263eb;
+      margin-bottom: 20px;
+    }
+
+    /* Provided responsive styles */
+    @media (max-width: 768px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Exercise 14: Adjust hero h1 and p font sizes using em */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HTML structure provided -->
+  <header>
+    <div class="logo">LOGO</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Product</h1>
+      <p>Experience the perfect blend of design and functionality. Our solution helps you achieve your goals faster and
+        more efficiently than ever before.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Experience unprecedented speed.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎯≥\</div>
+        <h3>Precise Control</h3>
+        <p>Take complete control.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Easy to Scale</h3>
+        <p>Grow without limits.</p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
