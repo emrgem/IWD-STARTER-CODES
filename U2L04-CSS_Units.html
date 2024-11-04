@@ -1,154 +1,68 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Practice Lab</title>
   <style>
-    /* Base styles and CSS variables */
-    :root {
-      --header-height: 10vh;
-      --hero-height: 90vh;
-      --container-width: 80%;
-      --content-width: 40em;
-      --base-spacing: 1rem;
-    }
-
-    /* Basic reset and typography */
+    /* Global Styles */
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: system-ui, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
     }
 
-    /* Provided layout styles */
-    header {
-      background: #4263eb;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      /* Exercise 1: Add header height using --header-height variable */
-    }
-
-    .logo {
-      /* Exercise 2: Convert the font-size to rem */
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: #f8f9fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      /* Exercise 3: Add hero height using --hero-height variable */
-      /* Exercise 4: Add padding using vw */
-    }
-
-    .hero-content {
-      /* Exercise 5: Add max-width using --container-width variable */
-    }
-
-    .hero h1 {
-      /* Exercise 6: Convert font-size to em */
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      /* Exercise 7: Convert font-size and max-width to em */
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .cta-button {
-      background: #4263eb;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      /* Exercise 8: Convert padding and font-size to em */
-      padding: 16px 32px;
-      font-size: 18px;
-    }
-
-    .features {
-      background: white;
-      /* Exercise 9: Add padding using --base-spacing variable */
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      /* Exercise 10: Add gap using --base-spacing */
-      /* Exercise 11: Add max-width using --container-width */
+    .container {
+      max-width: 800px;
       margin: 0 auto;
+      padding: 2rem;
     }
 
-    .feature {
-      text-align: center;
-      /* Exercise 12: Add padding using --base-spacing */
+    h1, h2, h3 {
+      margin-top: 0;
     }
 
-    .feature-icon {
-      /* Exercise 13: Convert font-size to rem */
-      font-size: 32px;
-      color: #4263eb;
-      margin-bottom: 20px;
-    }
-
-    /* Provided responsive styles */
-    @media (max-width: 768px) {
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-
-      /* Exercise 14: Adjust hero h1 and p font sizes using em */
-    }
   </style>
 </head>
-
 <body>
-  <!-- HTML structure provided -->
-  <header>
-    <div class="logo">LOGO</div>
-  </header>
+  <div class="container">
+    <h1>CSS Units Practice Lab</h1>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Our Product</h1>
-      <p>Experience the perfect blend of design and functionality. Our solution helps you achieve your goals faster and
-        more efficiently than ever before.</p>
-      <button class="cta-button">Get Started</button>
-    </div>
-  </section>
+    <!-- Pixel Exercise -->
+    <section id="pixel-exercise">
+      <h2>Pixels (px)</h2>
+      <p>Pixels (px) are an absolute unit, meaning they represent a fixed physical size on the screen. In this exercise, we are using pixels to set the width and height of a div to 200px each.</p>
+      <div>200px x 200px</div>
+    </section>
+    
+    <!-- Rem Exercise -->
+    <section id="rem-exercise">
+        <h2>Rem (rem)</h2>
+        <p>Rem (root em) is a relative unit that is based on the font size of the root element (usually the <code>html</code> element). In this exercise, we are using rem to set the width and height of a div to 20rem, which will be relative to the root font size.</p>
+        <div>20rem x 20rem</div>
+    </section>
+    
+    <!-- Em Exercise -->
+    <section id="em-exercise">
+        <h2>Em (em)</h2>
+        <p>Em (em) is a relative unit that is based on the font size of the current element. In this exercise, we are using em to set the width and height of a div to 20em, which will be relative to the font size of the div itself.</p>
+        <div>20em x 20em</div>
+    </section>
+    
+    <!-- Percent Exercise -->
+    <section id="percent-exercise">
+      <h2>Percent (%)</h2>
+      <p>Percent (%) is a relative unit, meaning the size is calculated based on the size of the parent element. In this exercise, we are using percent to set the width and height of a div to 50% of the parent container.</p>
+      <div>50% x 50%</div>
+    </section>
 
-  <section class="features">
-    <div class="features-grid">
-      <div class="feature">
-        <div class="feature-icon">⚡</div>
-        <h3>Lightning Fast</h3>
-        <p>Experience unprecedented speed.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🎯</div>
-        <h3>Precise Control</h3>
-        <p>Take complete control.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🚀</div>
-        <h3>Easy to Scale</h3>
-        <p>Grow without limits.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Viewport Exercise -->
+    <section id="viewport-exercise">
+        <h2>Viewport Units (vw, vh)</h2>
+      <p>Viewport units (vw, vh) are relative units that are based on the size of the viewport (the visible area of the web page). In this exercise, we are using vw (viewport width) and vh (viewport height) to set the width and height of a div to 50% of the viewport size.</p>
+      <div>50vw x 50vh</div>
+    </section>
+
+  </div>
 </body>
-
 </html>
