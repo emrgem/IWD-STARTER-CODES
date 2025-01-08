@@ -1,16 +1,16 @@
 // JAVASCRIPT STRING BASICS
 // =======================
 
-// 1. Create three different strings using:
-// - Single quotes
-// - Double quotes  
-// - Template literals (backticks)
+// 1. String Creation
+// -----------------
+let text1 = 'Hello';              // Single quotes
+let text2 = "World";              // Double quotes
+let text3 = `Welcome`;            // Template literal
 
 
-// 2. Create strings with:
-// - Your name
-// - Your favorite color
-// - A greeting
+// Multiple words
+let fullName = "John Doe";
+let greeting = `Hello ${fullName}`; // Template literal with variable
 
 
 // 3. Try string length
