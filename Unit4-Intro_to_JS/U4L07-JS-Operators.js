@@ -13,7 +13,7 @@ console.log("\nEquality vs Strict Equality:");
 
 // LOGICAL OPERATORS
 console.log("\nLOGICAL OPERATORS:");
-console.log('======================");
+console.log("======================");
 
 // AND (&&)
 console.log("\nAND operator (&&):");
