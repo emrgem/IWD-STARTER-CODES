@@ -1,6 +1,6 @@
 // COMPARISON OPERATORS
 console.log("COMPARISON OPERATORS:");
-console.log('======================");
+console.log("======================");
 
 // Number comparisons
 console.log("\nNumber Comparisons:");
