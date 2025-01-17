@@ -26,7 +26,7 @@ console.log("\nNOT operator (!):");
 
 // TRUTHY AND FALSY VALUES
 console.log("\nTRUTHY AND FALSY VALUES:");
-console.log('======================");
+console.log("======================");
 
 // Falsy values
 console.log("\nFalsy values:");
