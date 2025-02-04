@@ -2,10 +2,6 @@
 
 // Arrays allow storing multiple values in a single variable
 
-// Difference between Strings and Arrays
-// Strings are immutable
-// Arrays are mutable
-
 // Creating Arrays
 // Using array literal notation
 // Using the Array constructor
@@ -18,6 +14,10 @@
 // 2. Modifying Elements
 // 3. Adding Elements
 // 4. Checking Array Length
+
+// Difference between Strings and Arrays
+// Strings are immutable
+// Arrays are mutable
 
 // Multi-dimensional Arrays
 // Arrays can contain other arrays (2D arrays)
