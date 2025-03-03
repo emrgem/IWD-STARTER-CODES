@@ -79,3 +79,73 @@ for (const [key, value] of Object.entries(user)) {
 // id: 101
 // username: jsmith
 // email: john@example.com
+
+
+
+
+// ============================
+// LOOP EXERCISES 
+// ============================
+// FOR..OF SIMPLE EXERCISE
+// Count vowels in a sentence using split and for..of
+// ============================
+
+
+// Start with a sentence
+
+
+
+
+// Split the sentence into an array of words
+
+
+
+
+// Count vowels in each word
+
+
+
+
+// Expected output:
+// Sentence: JavaScript loops are fun
+// Words: [ 'JavaScript', 'loops', 'are', 'fun' ]
+// Total vowels: 8
+
+
+
+
+// ============================
+// FOR..IN SIMPLE EXERCISE
+// Calculate total cost of items in a shopping cart
+// ============================
+
+
+// Shopping cart with items and prices
+const cart = {
+  apple: 0.50,
+  banana: 0.30,
+  orange: 0.65,
+  milk: 2.50
+};
+
+
+// console.log("Shopping cart items:");
+// let totalCost = 0;
+
+
+// Loop through each item in the cart
+
+
+
+
+
+
+// Expected output:
+// Shopping cart items:
+// apple: $0.50
+// banana: $0.30
+// orange: $0.65
+// milk: $2.50
+// Total cost: $3.95
+
+
