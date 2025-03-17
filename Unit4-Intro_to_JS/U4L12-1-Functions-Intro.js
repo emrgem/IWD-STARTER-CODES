@@ -1,8 +1,19 @@
 // JavaScript Functions - Starter Code
 // ================================
 
-// Section 1: Functions Without Parameters
-// ====================================
+// 1. Functions Without Parameters
+// ============================
+
+// Here's what we're trying to improve:
+let width1 = 5;
+let height1 = 10;
+let area1 = width1 * height1;
+console.log("Area of rectangle: " + area1 + " square units");
+
+let width2 = 7;
+let height2 = 3;
+let area2 = width2 * height2;
+console.log("Area of rectangle: " + area2 + " square units");
 
 // Example: Simple greeting function
 function sayHello() {
@@ -12,33 +23,33 @@ function sayHello() {
 // Try calling this function:
 // sayHello();
 
-// Exercise 1: Create a function without parameters
-// Write a function that prints a specific rectangle's area (5x10)
+// Create a function to calculate a specific rectangle's area (5x10)
 function calculateSpecificRectangleArea() {
   // Your code here
+  
 }
 
 // Try calling your function:
 // calculateSpecificRectangleArea();
 
 
-// Section 2: Functions With Parameters
-// =================================
+// 2. Functions With Parameters
+// =========================
 
-// Example: Rectangle area with parameters
+// Create a function to calculate any rectangle's area
 function calculateRectangleArea(width, height) {
-  let area = width * height;
-  console.log("The area of the rectangle is: " + area + " square units");
+  // Your code here
+  
 }
 
 // Try calling this function with different values:
 // calculateRectangleArea(5, 10);
 // calculateRectangleArea(7, 3);
 
-// Exercise 2: Create a function with parameters
-// Write a function that calculates and prints the area of a circle
+// Create a function to calculate circle area with a parameter
 function calculateCircleArea(radius) {
   // Your code here (hint: use Math.PI)
+  
 }
 
 // Try calling your function with different radius values:
@@ -46,23 +57,23 @@ function calculateCircleArea(radius) {
 // calculateCircleArea(7.5);
 
 
-// Section 3: Functions That Return Values
-// ===================================
+// 3. Functions That Return Values
+// ===========================
 
-// Example: Improved rectangle area function with return
+// Create a rectangle area function that returns a value
 function calculateRectangleAreaWithReturn(width, height) {
-  let area = width * height;
-  return area; // Return the value instead of printing it
+  // Your code here
+  
 }
 
 // Try using this function and its return value:
 // let area1 = calculateRectangleAreaWithReturn(5, 10);
 // console.log("Area of rectangle: " + area1 + " square units");
 
-// Exercise 3: Create a function that returns a value
-// Modify your circle area function to return the area instead of printing it
+// Create a circle area function that returns a value
 function calculateCircleAreaWithReturn(radius) {
   // Your code here
+  
 }
 
 // Try using your function and its return value:
@@ -70,22 +81,23 @@ function calculateCircleAreaWithReturn(radius) {
 // console.log("Area of circle: " + circleArea + " square units");
 
 
-// Section 4: Function Expressions
-// ===========================
+// 4. Function Expressions
+// ====================
 
-// Example: Rectangle area as a function expression
+// Create a rectangle area function expression
 const rectangleAreaExpression = function(width, height) {
-  return width * height;
+  // Your code here
+  
 };
 
 // Try using this function expression:
 // let area = rectangleAreaExpression(5, 10);
 // console.log("Area using function expression: " + area + " square units");
 
-// Exercise 4: Create a function expression
-// Write a function expression that calculates the perimeter of a rectangle
+// Create a function expression for rectangle perimeter
 const calculateRectanglePerimeter = function(width, height) {
   // Your code here
+  
 };
 
 // Try using your function expression:
